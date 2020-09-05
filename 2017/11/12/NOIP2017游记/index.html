@@ -1,245 +1,38 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  <title>NOIP2017游记 | syp的个人网站</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="补更假装是11月12日写的">
-<meta property="og:type" content="article">
-<meta property="og:title" content="NOIP2017游记">
-<meta property="og:url" content="http://example.com/2017/11/12/NOIP2017%E6%B8%B8%E8%AE%B0/index.html">
-<meta property="og:site_name" content="syp的个人网站">
-<meta property="og:description" content="补更假装是11月12日写的">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2017-11-12T06:41:40.000Z">
-<meta property="article:modified_time" content="2017-11-18T07:00:23.776Z">
-<meta property="article:author" content="almzsyp">
-<meta property="article:tag" content="最后的挣扎">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="syp的个人网站" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+{% extends '_layout.swig' %}
+{% import '_macro/post.swig' as post_template %}
+{% import '_macro/sidebar.swig' as sidebar_template %}
 
-  
 
-<meta name="generator" content="Hexo 5.1.1"></head>
+{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">syp的个人网站</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-NOIP2017游记" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/11/12/NOIP2017%E6%B8%B8%E8%AE%B0/" class="article-date">
-  <time datetime="2017-11-12T06:41:40.000Z" itemprop="datePublished">2017-11-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      NOIP2017游记
-    </h1>
-  
+{% block page_class %}page-post-detail{% endblock %}
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>补更<br>假装是11月12日写的</p>
-<a id="more"></a>
-<h2 id="Day-0"><a href="#Day-0" class="headerlink" title="Day 0"></a>Day 0</h2><h3 id="上午"><a href="#上午" class="headerlink" title="上午"></a>上午</h3><p>小绿皮上的一上午<br>略……</p>
-<h3 id="下午"><a href="#下午" class="headerlink" title="下午"></a>下午</h3><p>宾馆里的一下午<br>略……</p>
-<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><h3 id="上午-1"><a href="#上午-1" class="headerlink" title="上午"></a>上午</h3><p>考场里的一上午<br>略……</p>
-<h3 id="下午-1"><a href="#下午-1" class="headerlink" title="下午"></a>下午</h3><p>宾馆里的一下午<br>略……</p>
-<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><h3 id="上午-2"><a href="#上午-2" class="headerlink" title="上午"></a>上午</h3><p>考场里的一上午<br>略……</p>
-<h3 id="下午-2"><a href="#下午-2" class="headerlink" title="下午"></a>下午</h3><p>小绿皮上的一下午<br>略……</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>真的没啥可写的<br>没有模拟<br>没押中题<br>用zhw大佬的说说结尾吧</p>
-<blockquote>
-<p>看到好多小朋友们在缅怀逝去的noip，嘛作为过来人我也曾感受过最终孤掷一注的畅快淋漓。(noi是考完后3小时左右出分的，那也是我人生最漫长的3小时)要相信，无论结果如何，这都将是上天对你最好的安排。从此以后，或文化课，或继续前行，前方的道路都将变得清晰起来。三年之前我以d类的身份拿到noi金牌却没得到任何有利的协议，但那却是对我最最好的鞭策。人生就像动态规划，你的一个又一个阶段是由上天安排的，而你，决定的是在这一阶段可以由上一阶段的哪些状态转移而来。越勤奋，越幸运，并不代表这一次你决策的方向有多么优秀，却代表着现在的这一个状态能够续写多少可能的结果。</p>
-</blockquote>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2017/11/12/NOIP2017%E6%B8%B8%E8%AE%B0/" data-id="ckepnyer50001yovjclyg06lf" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9C%80%E5%90%8E%E7%9A%84%E6%8C%A3%E6%89%8E/" rel="tag">最后的挣扎</a></li></ul>
+{% block content %}
 
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2017/11/18/%E6%A0%A1%E9%95%BF%E8%A6%81%E7%9A%84%E5%8F%8D%E6%80%9D/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          校长要的反思
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2017/11/09/%E6%9C%BA%E6%88%BF%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%9C/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">机房最后一夜</div>
-    </a>
-  
-</nav>
+  <div id="posts" class="posts-expand">
+    {{ post_template.render(page) }}
 
-  
-</article>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9C%80%E5%90%8E%E7%9A%84%E6%8C%A3%E6%89%8E/" rel="tag">最后的挣扎</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E6%96%87/" rel="tag">杂文</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E8%AE%BA/" rel="tag">杂论</a></li></ul>
+    <div class="post-spread">
+      {% if theme.jiathis %}
+        {% include '_partials/share/jiathis.swig' %}
+      {% elseif theme.baidushare %}
+        {% include '_partials/share/baidushare.swig' %}
+      {% elseif theme.add_this_id %}
+        {% include '_partials/share/add-this.swig' %}
+      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
+        {% include '_partials/share/duoshuo_share.swig' %}
+      {% endif %}
     </div>
   </div>
 
+{% endblock %}
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/%E6%9C%80%E5%90%8E%E7%9A%84%E6%8C%A3%E6%89%8E/" style="font-size: 20px;">最后的挣扎</a> <a href="/tags/%E6%9D%82%E6%96%87/" style="font-size: 20px;">杂文</a> <a href="/tags/%E6%9D%82%E8%AE%BA/" style="font-size: 10px;">杂论</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li></ul>
-    </div>
-  </div>
+{% block sidebar %}
+  {{ sidebar_template.render(true) }}
+{% endblock %}
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2019/11/06/%E5%A4%A7%E5%AD%A6%EF%BC%9F/">大学？</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/19/%E8%BF%99%E6%98%AF%E4%B8%80%E6%9D%A1%E5%8D%9A%E5%AE%A2/">这是一条博客</a>
-          </li>
-        
-          <li>
-            <a href="/2019/06/27/%E4%B8%80%E5%88%87%E5%B7%B2%E6%88%90%E5%BE%80%E4%BA%8B/">一切已成往事</a>
-          </li>
-        
-          <li>
-            <a href="/2018/03/17/%E5%8D%9A%E5%AE%A2%E5%8F%88%E5%A4%8D%E6%B4%BB%E4%BA%86/">博客又复活了</a>
-          </li>
-        
-          <li>
-            <a href="/2017/11/18/%E6%A0%A1%E9%95%BF%E8%A6%81%E7%9A%84%E5%8F%8D%E6%80%9D/">校长要的反思</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 almzsyp<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-  </div>
-</body>
-</html>
+{% block script_extra %}
+  {% include '_scripts/pages/post-details.swig' %}
+{% endblock %}
